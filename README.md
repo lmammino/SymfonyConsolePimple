@@ -29,17 +29,19 @@ or
 app/console greet -Y <yourname>
 ```
 
-(Obviously put some name instead of *<yourname>* or, if you are too lazy, avoid it at all!)
+(Obviously put some name instead of `<yourname>` or, if you are too lazy, avoid it at all!)
 
 
 License
 -------
 
 This is not a real software but a sample app, so why bother about a license? Anyway if you really want to bother I suppose
-MIT should be enough! ;P
+MIT should be enough! :stuck_out_tongue:
 
 
 Credits
 -------
 
 [Luciano Mammino (loige.com)](http://loige.com)
+
+:poop:
