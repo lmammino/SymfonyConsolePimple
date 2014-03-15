@@ -2,7 +2,6 @@
 
 namespace LMammino\ConsoleApp;
 
-
 use Symfony\Component\Yaml\Yaml;
 
 class Greeter
@@ -43,8 +42,8 @@ class Greeter
     /**
      * Builds the greeting for someone (you can yell on it if you want!)
      *
-     * @param string $name
-     * @param bool $yell wanna yell?
+     * @param  string $name
+     * @param  bool   $yell wanna yell?
      * @return string
      */
     public function greet($name, $yell = false)
@@ -55,8 +54,7 @@ class Greeter
         }
 
         $name = strtolower($name);
-        if(!isset($this->greetings[$name]))
-        {
+        if (!isset($this->greetings[$name])) {
             $this->greetings[$name] = 1;
         } else {
             $this->greetings[$name]++;
@@ -68,7 +66,7 @@ class Greeter
     /**
      * Will tell you how many times you greet someone
      *
-     * @param string $name
+     * @param  string $name
      * @return int
      */
     public function countGreetings($name)
@@ -80,4 +78,4 @@ class Greeter
 
         return $this->greetings[$name];
     }
-} 
+}

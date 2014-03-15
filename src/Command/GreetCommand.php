@@ -2,7 +2,6 @@
 
 namespace LMammino\ConsoleApp\Command;
 
-
 use LMammino\ConsoleApp\Greeter;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -48,12 +47,10 @@ class GreetCommand extends Command
         $yell = $input->getOption('yell');
 
         $output->writeln($this->greeter->greet($name, $yell));
-        if (1 === ($count = $this->greeter->countGreetings($name))){
+        if (1 === ($count = $this->greeter->countGreetings($name))) {
             $output->writeln('(First time!)');
         } else {
             $output->writeln(sprintf('(%d times)', $count));
         }
     }
-
-
-} 
+}
