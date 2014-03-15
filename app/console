@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/bootstrap.php';
+
+$application = new \Symfony\Component\Console\Application();
+$application->addCommands($container['commands']);
+$application->run();

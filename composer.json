@@ -1,0 +1,21 @@
+{
+    "name": "lmammino/symfony-console-pimple",
+    "description": "A sample Symfony Console app using Pimple",
+    "require": {
+        "symfony/console": "dev-master",
+        "pimple/pimple": "dev-master",
+        "symfony/yaml": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luciano Mammino",
+            "email": "lmammino@oryzone.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LMammino\\ConsoleApp\\": "src/"
+        }
+    }
+}
