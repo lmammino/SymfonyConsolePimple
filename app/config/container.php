@@ -20,4 +20,10 @@ $c['commands'] = function($c) {
     );
 };
 
+$c['application'] = function($c) {
+    $application = new \Symfony\Component\Console\Application();
+    $application->addCommands($c['commands']);
+    return $application;
+};
+
 return $c;

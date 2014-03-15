@@ -3,6 +3,6 @@
 
 require __DIR__ . '/bootstrap.php';
 
-$application = new \Symfony\Component\Console\Application();
-$application->addCommands($container['commands']);
+/** @var \Symfony\Component\Console\Application $application */
+$application = $container['application'];
 $application->run();
